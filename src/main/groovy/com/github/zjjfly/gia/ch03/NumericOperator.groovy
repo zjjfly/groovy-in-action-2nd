@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch03
+package com.github.zjjfly.gia.ch03
 
 //数字类型的加减乘操作的强制类型转换原则:
 //1.如果其中有一个操作数是Float或Double,结果就是Double

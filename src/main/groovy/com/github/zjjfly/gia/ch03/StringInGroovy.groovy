@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch03
+package com.github.zjjfly.gia.ch03
 
 //Groovy有两种字符串:简单字符串和GString,GString支持在字符串中插入动态值
 

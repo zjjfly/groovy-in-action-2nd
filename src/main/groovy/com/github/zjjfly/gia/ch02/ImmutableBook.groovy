@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch02
+package com.github.zjjfly.gia.ch02
 
 import groovy.transform.Immutable
 

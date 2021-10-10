@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch02
+package com.github.zjjfly.gia.ch02
 
 @groovy.lang.Grab(group = 'org.apache.commons', module = 'commons-lang3', version = '3.5')
 import org.apache.commons.lang3.ClassUtils

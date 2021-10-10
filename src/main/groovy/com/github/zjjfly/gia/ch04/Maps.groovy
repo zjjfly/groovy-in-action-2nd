@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch04
+package com.github.zjjfly.gia.ch04
 
 /**
  * @author zjjfly

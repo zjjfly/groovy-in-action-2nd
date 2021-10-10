@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch04
+package com.github.zjjfly.gia.ch04
 
 //java的数组无法动态的修改长度,但可以在语法上方便的访问和修改元素,而Groovy的list既避免了前者又实现了后者
 

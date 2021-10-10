@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch01
+package com.github.zjjfly.gia.ch01
 
 
 @groovy.lang.Grab(group = 'org.codehaus.gpars', module = 'gpars', version = '1.2.1')

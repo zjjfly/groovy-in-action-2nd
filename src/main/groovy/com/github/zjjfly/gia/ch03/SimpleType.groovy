@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch03
+package com.github.zjjfly.gia.ch03
 
 /**
  * Created by zjjfly on 2017/2/13.

@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch03
+package com.github.zjjfly.gia.ch03
 
 import java.awt.*
 

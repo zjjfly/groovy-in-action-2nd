@@ -1,4 +1,4 @@
-package main.groovy.com.github.zjjfly.gia.ch04
+package com.github.zjjfly.gia.ch04
 
 //range使用..定义,这个操作符的优先级较低,所以一般放在括号里
 assert (0..10).contains(0)
