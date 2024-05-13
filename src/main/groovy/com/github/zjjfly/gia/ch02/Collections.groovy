@@ -28,6 +28,6 @@ def x = 1..10
 assert x.contains(5)
 assert !x.contains(15)
 assert x.size() == 10
-assert x.from == 1//其实数字
-assert x.to == 10//结尾数字
+assert x.from == 1//起始元素
+assert x.to == 10//末尾元素
 assert x.reverse() == 10..1//可以定义顺序颠倒的range

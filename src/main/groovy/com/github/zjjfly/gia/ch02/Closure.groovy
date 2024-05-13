@@ -10,6 +10,7 @@ def totalClinks = 0
 def partyPeople = 100
 1.upto(partyPeople) { guestNumber ->//Groovy给Integer新增的upto方法，可以替代Java的for(int i=x,x<n,x++){...}这样的代码
     clinksWithGuest = guestNumber - 1
-    totalClinks += clinksWithGuest//closure可以访问和修改外部变量，这在Java中是很难的
+    //closure可以访问和修改外部变量，这在Java中是很难的
+    totalClinks += clinksWithGuest
 }
 assert totalClinks == (partyPeople * (partyPeople - 1)) / 2

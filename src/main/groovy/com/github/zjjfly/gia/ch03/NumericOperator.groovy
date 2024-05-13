@@ -15,7 +15,7 @@ assert (Byte) 1 + (Byte) 2 instanceof Integer
 //其他操作的强制类型转换原则:
 //1.如果操作溢出的当前的数字类型的范围,不会强制转型,除非是power函数
 assert (Integer.MAX_VALUE + 1) == Integer.MIN_VALUE
-//2.对于除法,如果其中有一个操作数是Float或Double,结果就是Double,否则结果类型是BigDecimal,并进行四舍五入去掉小数点
+//2.对于除法,如果其中有一个操作数是Float或Double,结果就是Double,否则结果类型是BigDecimal
 assert (1.2f / 0.3) instanceof Double
 assert (1.2 / 0.3) instanceof BigDecimal
 assert 1.2 / 0.3 == 4

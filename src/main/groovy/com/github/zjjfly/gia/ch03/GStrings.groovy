@@ -19,7 +19,7 @@ assert out == 'Year 70 Month 1 Day 1'
 def tz = TimeZone.getTimeZone('GMT')
 def format = DateTimeFormatter.ofPattern('d MMM YYYY HH:mm:SS z').withZone(tz.toZoneId())
 out = "Date is ${date.format(format)} !"//有花括号的里面可以放任意的表达式,花括号表示是一个闭包
-assert out == 'Date is 1 一月 1970 00:00:00 GMT !'
+assert out == 'Date is 1 1月 1970 00:00:00 GMT !'
 
 //GString最适用于模板字符串
 def sql = """

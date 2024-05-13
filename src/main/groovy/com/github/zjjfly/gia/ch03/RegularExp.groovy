@@ -46,7 +46,7 @@ found = ''
 }
 assert found == 'rain Spain plain '
 
-//Groovy新键入的replaceAll方法,相比Java的,它的第二个参数是一个可以对每个匹配项进行操作的闭包,这样就可以实现对不同的匹配项做不同的替换
+//Groovy新加入的replaceAll方法,相比Java的,它的第二个参数是一个可以对每个匹配项进行操作的闭包,这样就可以实现对不同的匹配项做不同的替换
 def cloze = myFairStringy.replaceAll(rhyme) { it - 'ain' + '___' }
 assert cloze == 'The r___ in Sp___ stays mainly in the pl___!'
 

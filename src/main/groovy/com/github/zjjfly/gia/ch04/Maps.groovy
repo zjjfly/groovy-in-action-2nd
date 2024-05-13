@@ -52,3 +52,12 @@ assert myMap.d == 2
 //如果key中含有特殊字符(如.),要使用属性访问这个key的值,需要把它放在字符串记号中
 myMap = ['a.b': 1]
 assert myMap.'a.b' == 1
+
+//map的查询
+myMap = [a:1, b:2, c:3]
+def other = [b:2, c:3, a:1]
+assert myMap == other
+assert myMap.any {it.value > 2}
+assert myMap.every {it.key < 'd'}
+assert myMap.keySet() == ['a','b','c'] as Set
+assert myMap.values().toList() == [1, 2, 3]

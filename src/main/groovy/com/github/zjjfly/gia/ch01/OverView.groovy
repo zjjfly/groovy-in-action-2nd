@@ -1,8 +1,8 @@
 package com.github.zjjfly.gia.ch01
 
-
 @groovy.lang.Grab(group = 'org.codehaus.gpars', module = 'gpars', version = '1.2.1')
-import groovyx.gpars.GParsExecutorsPool
+import groovy.xml.XmlSlurper
+import groovyx.gpars.GParsPool
 
 /**
  * Created by zjjfly on 2017/2/3.
@@ -35,9 +35,9 @@ for (customer in customers.corporate.customer) {
     println "${customer.@name} works for ${customer.@company}"
 }
 
-def urls = ['http://www.groovy-lang.org']*.toURL()
-println GParsExecutorsPool.withPool {
+def urls = ['https://www.groovy-lang.org']*.toURL()
+println GParsPool.withPool {
     urls.collectParallel {
-        it.text.findAll(~/[Gg]roovy/).size
+        it.text.findAll(~/[Gg]roovy/).size()
     }
 }

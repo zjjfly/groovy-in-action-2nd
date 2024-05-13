@@ -10,7 +10,7 @@ import java.awt.*
 int i = 1//声明的类型是原始类型，但实际上不是
 assert i instanceof Integer
 
-//Groovy编译器会自动在加入类型转换，所以下面的代码在编译的时候不会报错
+//Groovy编译器会自动加入类型转换，所以下面的代码在编译的时候不会报错
 //Integer n = new Object()
 
 //Groovy强大的自动类型转换

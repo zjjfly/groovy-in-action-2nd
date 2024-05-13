@@ -4,8 +4,8 @@ package com.github.zjjfly.gia.ch03
 
 //Groovy的几种字符串字面量
 'hello jjzi'//使用单引号的字符串,和Java的字符串字面量相似
-def name = "jjzi"//使用双引号的字符串,如果其中不存在没有逃逸的$,和上面一种是等价的.
-"hello \$$name"//有没有逃逸的$,会看成是GString
+def name = "jjzi"//使用双引号的字符串,如果其中不存在未逃逸的$,和上面一种是等价的.
+println "hello \$$name".class//存在未逃逸的$,会看成是GString
 //三引号的字符串是支持多行的字符串,类似Scala的.
 //它的实际类型的确定标准和双引号的字符串是一样的
 """第一行
@@ -24,7 +24,7 @@ GString.EMPTY + '\\' + /u${1 + 1}/
 println($/$$\ /$)//$\
 
 //Groovy里的转义符和Java的基本相同,但它多了一个$的转义在非单引号字符串中
-"\$"
+println "\$"
 
 //Groovy要表示char需要显示的指定类型
 char a = 'x'
