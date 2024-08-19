@@ -96,7 +96,7 @@ assert expr == '1*5'
 //把嵌套的list压平,无论嵌套的层级有多少
 assert [1, [2, [3]]].flatten() == [1, 2, 3]
 //得到两个集合的交集
-assert [1, 2, 3].intersect([4, 3, 1]) == [3, 1]
+assert [1, 2, 3].intersect([4, 3, 1]) == [1, 3]
 //判断两个集合的交集是否为空
 assert [1, 2, 3].disjoint([4, 5, 6])
 

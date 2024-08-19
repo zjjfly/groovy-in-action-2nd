@@ -37,7 +37,7 @@ for (customer in customers.corporate.customer) {
 
 def urls = ['https://www.groovy-lang.org']*.toURL()
 println GParsPool.withPool {
-    urls.collectParallel {
-        it.text.findAll(~/[Gg]roovy/).size()
+    urls.collectParallel { URL url ->
+        url.text.findAll(~/[Gg]roovy/).size()
     }
 }
